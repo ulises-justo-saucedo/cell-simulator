@@ -22,6 +22,12 @@ There are two ways to install Cell Simulator.
 4. Run ```life_simulator.exe```.
 5. Enjoy.
 
+Note: If Windows Defender flags the downloaded file as a threat, please rest assured it’s a false positive. You can exclude the file temporarily or verify it with [VirusTotal](https://tls.virustotal.com/gui/home/upload). Below is a screen capture of [VirusTotal](https://tls.virustotal.com/gui/home/upload) after scanning my own ```life_simulator.exe```.
+
+![image](https://github.com/user-attachments/assets/26c3d076-fbc0-4dd6-872a-d5a9d3c16f96)
+
+But if by any means you don't feel comfortable with this executable, proceed to the 2nd option below.
+
 ### Option 2: Compile it by yourself
 In order to compile Cell Simulator, you need [w64devkit](https://github.com/skeeto/w64devkit) with [raylib](https://github.com/raysan5/raylib)'s libraries configured. If you don't already have these, follow the steps below.
 
