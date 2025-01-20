@@ -45,7 +45,7 @@ cd cell-simulator
 gcc main.c life_simulator.c -lraylib -lgdi32 -lwinmm -o life_simulator
 ```
 
-[Note that I use ```-lwinmm``` flag since I'm in Windows Operative System.](!)
+⚠️ **Warning**: Note that I use ```-lwinmm``` flag since I'm in Windows Operative System.
 
 ## Features
 1. Real time simulation of cellular life.
