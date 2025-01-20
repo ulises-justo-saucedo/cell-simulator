@@ -121,6 +121,8 @@ void clear_simulation(int grid[GRID_WIDTH][GRID_HEIGHT], int next_grid[GRID_WIDT
 void kill_or_revive_cell(int grid[GRID_WIDTH][GRID_HEIGHT], int next_grid[GRID_WIDTH][GRID_HEIGHT], int cell_size) {
 	int mouseX = GetMouseX() / cell_size;
 	int mouseY = GetMouseY() / cell_size;
-	grid[mouseX][mouseY] = (grid[mouseX][mouseY] == 0) ? 1 : 0;
-	next_grid[mouseX][mouseY] = (grid[mouseX][mouseY] == 0) ? 1 : 0;
+	if(mouseX >= 0 && mouseX <= GRID_WIDTH && mouseY >= 0 && mouseY <= GRID_HEIGHT) {
+		grid[mouseX][mouseY] = (grid[mouseX][mouseY] == 0) ? 1 : 0;
+		next_grid[mouseX][mouseY] = (grid[mouseX][mouseY] == 0) ? 1 : 0;
+	}
 }

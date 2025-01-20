@@ -7,7 +7,7 @@ int main(void) {
 	//cell_size: the size of each cell; you can put a big number to see more bigger cells in the simulation
 	//seconds_between_each_generation: how many seconds the simulation will wait before passing to the next generation of cells
 	//if you want to tweak how many cells are simulated (the width and height of the grid) you can go to life_simulator.h and modify GRID_WIDTH and GRID_HEIGHT directly
-	const int cell_size = 2;
+	const int cell_size = 5;
 	int seconds_between_each_generation = 0;
 	int grid[GRID_WIDTH][GRID_HEIGHT];
 	int next_grid[GRID_WIDTH][GRID_HEIGHT];

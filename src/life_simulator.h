@@ -5,7 +5,7 @@
 #define SCREEN_WIDTH  1280
 #define SCREEN_HEIGHT 640
 #define TITLE         "Life Simulator"
-#define GRID_WIDTH    300
+#define GRID_WIDTH    365
 #define GRID_HEIGHT   GRID_WIDTH
 void initialize_cells(int grid[GRID_WIDTH][GRID_HEIGHT]);
 void draw_cells(int grid[GRID_WIDTH][GRID_HEIGHT], int cell_size);
