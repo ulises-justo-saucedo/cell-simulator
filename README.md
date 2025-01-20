@@ -38,10 +38,10 @@ In order to compile Cell Simulator, you need [w64devkit](https://github.com/skee
 git clone https://github.com/ulises-justo-saucedo/cell-simulator
 ```
 
-2. Navigate to ```cell-simulator``` folder and compile it using ```gcc```:
+2. Navigate to ```cell-simulator/src``` folder and compile it using ```gcc```:
 
 ```
-cd cell-simulator
+cd cell-simulator/src
 gcc main.c life_simulator.c -lraylib -lgdi32 -lwinmm -o life_simulator
 ```
 
