@@ -73,7 +73,7 @@ void calculate_next_cell_generation(int grid[GRID_WIDTH][GRID_HEIGHT], int next_
 				if(current_cell == 1) {
 					if(alive_cells < 2) {
 						next_grid[x][y] = 0;
-					} else if (alive_cells == 3) {
+					} else if (alive_cells == 3 || alive_cells == 2) {
 						next_grid[x][y] = current_cell;
 					} else if (alive_cells > 3) {
 						next_grid[x][y] = 0;
