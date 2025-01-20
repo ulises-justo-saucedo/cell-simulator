@@ -4,16 +4,16 @@ int main(void) {
 	/* -------------------------------------------------------------------- */
 	//just some variable definitions
 	//you can tweak these parameters:
-	//grid_width: how many cells you want to simulate
 	//cell_size: the size of each cell; you can put a big number to see more bigger cells in the simulation
 	//seconds_between_each_generation: how many seconds the simulation will wait before passing to the next generation of cells
+	//if you want to tweak how many cells are simulated (the width and height of the grid) you can go to life_simulator.h and modify GRID_WIDTH and GRID_HEIGHT directly
+	const int cell_size = 2;
+	int seconds_between_each_generation = 0;
 	int grid[GRID_WIDTH][GRID_HEIGHT];
 	int next_grid[GRID_WIDTH][GRID_HEIGHT];
-	const int cell_size = 5;
 	int paused = 1; //1: paused, 0: not paused
 	char *simulation_state = "";
 	double last_time_refresh = 0;
-	int seconds_between_each_generation = 0;
 	/* -------------------------------------------------------------------- */
 	srand(time(0));
 	initialize_cells(grid);
